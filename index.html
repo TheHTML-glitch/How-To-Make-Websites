@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Make Websites</title>
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            font-family: monospace;
+            background-color: #f9f9f9; /* Subtle website color */
+            color: #333;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        header {
+            background-color: #0073e6; 
+            color: white;
+            padding: 20px;
+            font-size: 2rem;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #005bb5;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        h2:hover {
+            color: #ff6600;
+        }
+
+        .answer {
+            display: none;
+            margin: 10px 20px;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        /* Button Styling */
+        button {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            padding: 10px 15px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #005bb5;
+        }
+
+        /* Emojis */
+        .emoji {
+            font-size: 1.5rem;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
+    <script>
+        // JavaScript to toggle answers
+        function toggleAnswer(id) {
+            var answer = document.getElementById(id);
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>🌐 How to Make Websites 💻</header>
+
+    <!-- Section 1 -->
+    <h2 onclick="toggleAnswer('q1')">1️⃣ What is a Website? 🤔</h2>
+    <div id="q1" class="answer">
+        A website is a collection of web pages accessible through the internet. It can display text, images, videos, and interactive content to share information or provide services. Websites are built using HTML, CSS, and JavaScript.
+        <br>🌍 Websites help you connect with the world!
+    </div>
+
+    <!-- Section 2 -->
+    <h2 onclick="toggleAnswer('q2')">2️⃣ What are the Benefits of a Website? 🚀</h2>
+    <div id="q2" class="answer">
+        Websites provide many benefits, such as: 
+        <br>✅ Increased Visibility: Reach people worldwide.
+        <br>✅ 24/7 Availability: Accessible at any time.
+        <br>✅ Business Growth: Help businesses attract customers.
+        <br>✅ Fun and Creativity: A great place to express your ideas!
+        <br>🌟 A website makes you stand out online!
+    </div>
+
+    <!-- Section 3 -->
+    <h2 onclick="toggleAnswer('q3')">3️⃣ How to Make a Website? 🛠️</h2>
+    <div id="q3" class="answer">
+        Here are the steps to create a website:
+        <br>1️⃣ Learn the Basics: Start with HTML for structure, CSS for styling, and JavaScript for interactivity.
+        <br>2️⃣ Design: Plan how your website will look.
+        <br>3️⃣ Write Code: Use a code editor to create web pages.
+        <br>4️⃣ Test: Test the website on different devices.
+        <br>5️⃣ Publish: Use hosting services to go live!
+        <br>🌟 Tip: Practice regularly to improve!
+    </div>
+
+    <!-- Fun Button -->
+    <button onclick="alert('You’re awesome! 🌟 Keep learning to create amazing websites! 💻')">
+        Click me for Motivation! 😃
+    </button>
+
+    <!-- Footer -->
+    <footer>Made with ❤️ for aspiring web creators!</footer>
+</body>
+</html>
